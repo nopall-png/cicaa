@@ -41,7 +41,9 @@ export default function ForgiveMeProject() {
   const [animate, setAnimate] = useState(false);
 
   // Array kata-kata lucu yang akan diputar (Page 1)
+  // Aku tambahkan "No" di urutan pertama biar awalnya tombol bertuliskan No
   const brokenPhrases = [
+    "No",
     "that ones broken",
     "sorry, connection error",
     "button is currently tired",
@@ -162,9 +164,9 @@ export default function ForgiveMeProject() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-6 px-8 sm:px-0 relative">
               <button
                 onClick={() => {
-  launchConfetti();
-  setStep(3);
-}}
+                  launchConfetti();
+                  setStep(3);
+                }}
                 className="w-full sm:w-auto px-12 py-3.5 bg-pink-500 text-white font-semibold rounded-full hover:bg-pink-600 active:scale-95 transition-all shadow-lg hover:shadow-pink-200 z-10"
               >
                 Yes
